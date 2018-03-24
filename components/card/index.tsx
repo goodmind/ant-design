@@ -40,7 +40,9 @@ export interface CardProps {
   defaultActiveTabKey?: string;
 }
 
-export default class Card extends React.Component<CardProps, {}> {
+export default class Card extends React.Component<CardProps, {
+  widerPadding: boolean,
+}> {
   static Grid: typeof Grid = Grid;
   static Meta: typeof Meta = Meta;
   resizeEvent: any;
